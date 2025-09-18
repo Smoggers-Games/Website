@@ -1,0 +1,390 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+u {
+  text-decoration: underline;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* My Code */
+* {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 100px;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+}
+
+header .fade-line {
+  margin-top: 100px;
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 32px 32px;
+}
+
+header nav ul li a {
+  font-family: monospace;
+  font-size: clamp(24px, 2vw, 32px);
+  color: white;
+}
+
+header nav ul li a:hover {
+  color: gray;
+}
+
+/* INDEX */
+.stack-logo {
+  position: relative;
+  display: inline-block; /* keeps size of base image */
+}
+
+.stack-logo .base {
+  display: block; /* removes bottom whitespace */
+  width: 100%;    /* optional: make it responsive */
+  height: auto;
+
+  filter: blur(4px);
+}
+
+.stack-logo .top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centers perfectly */
+  max-width: 50%;  /* adjust size of logo */
+  height: auto;
+
+  filter: drop-shadow(15px 15px 10px rgba(0,0,0,0.8));
+}
+
+.about-us {
+  padding-top: 160px;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-bottom: 160px;
+}
+
+.about-us h1 {
+  font-family: monospace;
+  font-size: clamp(16px, 2vw, 32px);
+
+  text-align: center;
+  line-height: 1.6;
+  color: white;
+}
+
+.about-us p {
+  font-family: monospace;
+  font-size: clamp(8px, 2vw, 16px);
+
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+  color: white;
+
+  padding-top: 32px;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 32px;
+
+  text-align: center;
+  line-height: 1.6;
+  color: white;
+}
+
+h2 {
+  font-family: monospace;
+  font-size: 48px;
+
+  padding-bottom: 80px;
+  text-align: center;
+  line-height: 1.6;
+  color: white;
+}
+
+.video-container {
+  position: relative;
+  max-width: 800px;  /* limit size */
+  margin: 0 auto;    /* center it */
+  width: calc(100% - 20px);          /* full width */
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  border: 3px solid white;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.our-games {
+  padding-top: 80px;
+}
+
+.SGA {
+  width: 300px;
+  height: 300px;
+
+  margin: 0 auto;
+}
+
+.SGA img {
+  width: 100%;
+  height: 100%;
+}
+
+.our-games h1 {
+  padding-bottom: 16px;
+}
+
+.our-games p {
+  font-family: monospace;
+  font-size: 16px;
+
+  font-style: italic;
+  text-align: center;
+  line-height: 1.6;
+  color: white;
+
+  padding-top: 32px;
+}
+
+.our-games button {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+button {
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+
+  display: block;
+  margin: 0 auto;
+  padding: 10px 10px;
+
+  color: white;
+  background-color: black;
+  border: 3px solid white;
+}
+
+button:hover {
+  border: 3px solid gray;
+  color: gray;
+}
+
+button:active {
+  color: black;
+  background-color: gray;
+  border: 3px solid gray;
+}
+
+.contact h1 {
+  padding-top: 64px;
+}
+
+.contact button {
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+/* Footer */
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  margin-top: 0px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.fade-line {
+  height: 2px; /* thickness of the line */
+  background: linear-gradient(to right, transparent, white, transparent);
+}
+
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: monospace;
+  font-size: 24px;
+  color: white;
+  line-height: 40px;
+}
+
+footer ul li a:hover {
+  color: gray;
+}
+
+.footer-sm {
+  height: 50px;
+  float: right;
+}
+
+.footer-sm a:hover img {
+  opacity: 0.5;
+}
+
+.footer-sm img {
+  height: 100%;
+  margin-left: 10px;
+}
+
+footer .Copyrights {
+  color: white;
+  margin-top: 200px;
+  text-align: center;
+}
+
+/* Web-Design */
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
